@@ -63,3 +63,52 @@ return sum;
 
     }
 }
+
+
+after return statement function over we cant put any opration or any print statement after that in that function 
+if you put a return type you are supposed to return a value otherwise it give error 
+also the return type value declared and the return value type should match you can't declare string type and return int value 
+
+
+public class Display{
+    public static void main(String[] args) {
+       greeting();
+       
+    }
+    static void greeting(){
+        System.out.println("hello world function display");
+    }
+}
+
+
+
+
+MAIN FUNCTION IS THE FIRST FUNCTION THAT WORKS 
+
+
+public class Display{
+    public static void main(String[] args) {
+       String message = greet();                 // refrence variable message will store the return string value into message 
+       System.out.println(message);
+    }
+    static String greet(){                       // return type as String 
+String greeting="hello world string return";
+return greeting;
+
+       
+    }
+}
+
+PASSING THE VALUE OF PARAMETERS ALONG WITH THE METHOD 
+
+public class ParameterIntoMethod{
+    public static void main(String[] args) {
+        int ans=sum3(20,30);         // NOW IF WE DECLARE THE PARAMETERS WE HAVE TO PASS THE VALUE OF PARAMETERS WHEN WE INVOKE OR CALL THE FUNCTION SEQUENCE SHOULD BE SAME AS THAT OF DECLARATION OF ARGUMENTS 
+        System.out.println(ans);
+    }
+
+    static int sum3(int a, int b){   // DECLARING PARAMETERS OR ARGUMENTS WITH DATATYPE 
+    int sum= a+b;                     
+    return sum;
+    }
+}

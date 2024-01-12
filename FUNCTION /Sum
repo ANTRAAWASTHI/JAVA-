@@ -34,3 +34,32 @@ public class Sum{
 
     }
 }
+
+
+
+NOW INSTEAD OF PRINTING THE SUM 
+WE TAKE SUM AS A RETURN TYPE 
+WE WILL RETURN THE VALUE OF SUM 
+
+IN THIS EXAMPLE WE CREATE A REFRENCE VARIABLE CALLED AS ANS TO HOLD THE RETURN VALUE OF SUM 
+the void will get replaced by int as a return type as  we return a value 
+
+
+
+import java.util.*;
+public class Sum{                             // we can call the function as many times we want it without repeating code 
+    public static void main(String args[]){
+        int ans=sum();                       //the value returned from sum method gets assigned to refrence variable ans  
+       System.out.println(ans);              // and then it gets printed 
+    }
+    static int sum(){                        // return type changes to int 
+ Scanner sc=new Scanner(System.in);
+ System.out.println("enter number one ");
+ int num1=sc.nextInt();
+System.out.println("enter number two");
+ int num2=sc.nextInt();
+int sum= num1+num2;
+return sum; 
+
+    }
+}

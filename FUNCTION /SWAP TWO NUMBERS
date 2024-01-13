@@ -4,8 +4,12 @@ public class Swap{
         int b=20;
 
         int temp=a;  //a=10
-        b=a;         //b=10;
+        a=b;         //b=10;
         temp=b;      
         System.out.println(a+" "+b);
     }
 }
+
+
+NOW LETS DO THE SAME SWAP WITH METHOD IN JAVA 
+

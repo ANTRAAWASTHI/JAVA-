@@ -1,0 +1,43 @@
+public class Met{
+    public static void main(String[] args) {
+        String message = greet();     //refernce variable assigned to store value of string greet 
+        System.out.println(message);
+        
+    }
+    static String greet(){
+        String greeting="how are you?";    // string 
+        return greeting;
+    }
+}
+
+alt enter automatically creates string function 
+
+public class Met{
+    public static void main(String[] args) {
+String message=greet("antra");                    // assigning value of parameter name 
+    System.out.println(message);
+    }
+    static String greet( String name){            //declaring parameter name  of string datatype 
+        String greeting="my name is " +name;      // to print the message along with value of parameter 
+        return greeting;
+    }
+   
+    }
+
+TAKING VALUE OF PARAMETER FROM THE USER AND DISPLAYING IT 
+
+import java.util.*;
+public class Si{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);    // OBJECT OF SCCANER CLASS 
+        String name=sc.next();                // TAKING STRING INPUT FROM THE USER 
+        String message=greet(name);           // STORING THE VALUE OF PARAMETER IN REF VARIABLE 
+        System.out.println(message);          // DISPLAING THE VALUE 
+    }
+    static String greet(String name){         // DECLARING THE METHOD OF STORING AND RETURNING STRING 
+        String greeting="name is"+name;       // RETURNING VALUE 
+        return greeting;
+    }
+}
+
+

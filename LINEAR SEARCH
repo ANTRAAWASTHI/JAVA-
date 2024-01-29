@@ -1,0 +1,122 @@
+public class Ls{
+    public static void main(String[] args) {
+        int []nums={23, 45,1,2,3,4,5,6};                                          // declaring array 
+        int target=4;
+        int ans= LinearSearch(nums,target);                                       // calling function and passing values into it 
+        System.out.println(ans);
+    }
+    static int LinearSearch(int[]arr, int target){                                // declaring a fucntion for linear search with an array of int type and a target element which is to be found 
+if (arr.length==0){                                                              // that is if array is empty return -1 that has no index
+    return -1;
+} for (int index =0;index<arr.length;index++){                                   //index<arr.length because index of an array starts from 0 
+    int element = arr[index];
+    if (element==target){
+        return index;                                                           // if the value gets returned into a function then the function ends and the returned value is stored and given out as ans 
+                                                                                // here returned index gets into the LinearSearch function above and is given out as ans value 
+    }
+}
+return -1;                                                                         
+
+    }
+}
+
+
+
+
+
+## if you want to return the value of element instead of index 
+
+public class Ls{
+    public static void main(String[] args) {
+        int []nums={23, 45,1,2,3,4,5,6};                                          // declaring array 
+        int target=4;
+        int ans= LinearSearch(nums,target);                                       // calling function and passing values into it 
+        System.out.println(ans);
+    }
+    static int LinearSearch(int[]arr, int target){                                // declaring a fucntion for linear search with an array of int type and a target element which is to be found 
+if (arr.length==0){                                                              // that is if array is empty return -1 that has no index
+    return -1;
+} for (int index =0;index<arr.length;index++){                                   //index<arr.length because index of an array starts from 0 
+    int element = arr[index];
+    if (element==target){
+        return element;                                                           // if the value gets returned into a function then the function ends and the returned value is stored and given out as ans 
+                                                                            // here returned element gets into the LinearSearch function above and is given out as ans value 
+    }
+}
+return -1;                                                                         
+
+    }
+}
+
+## this code can be optimized by enhanced for loop as the use of index is not needed for element value 
+
+public class Ls{
+    public static void main(String[] args) {
+        int []nums={23, 45,1,2,3,4,5,6};                                          // declaring array 
+        int target=4;
+        int ans= LinearSearch(nums,target);                                       // calling function and passing values into it 
+        System.out.println(ans);
+    }
+    static int LinearSearch(int[]arr, int target){                                // declaring a fucntion for linear search with an array of int type and a target element which is to be found 
+if (arr.length==0){                                                              // that is if array is empty return -1 that has no index
+    return -1;
+} for (int element:arr){                                   //index<arr.length because index of an array starts from 0 
+    int element = arr[index];
+    if (element==target){
+        return element;                                                           // if the value gets returned into a function then the function ends and the returned value is stored and given out as ans 
+                                                                            // here returned element gets into the LinearSearch function above and is given out as ans value 
+    }
+}
+return -1;                                                                         
+
+    }
+}
+
+
+
+public class Ls{
+    public static void main(String[] args) {
+        int []nums={23, 45,1,2,3,4,5,6};
+        int target=4;
+        boolean ans= LinearSearch(nums,target);                               //changes for getting boolean value
+        System.out.println(ans);
+    }
+    static boolean LinearSearch(int[]arr, int target){                  // declaring a fucntion for linear search with an array of int type and a target element which is to be found function of booleam type
+if(arr.length==0){                                                        // that is if array is empty return false      
+    return false;
+} for (int index =0;index<arr.length;index++){
+    int element = arr[index];
+    if (element==target){
+        return true;
+    }
+}
+return false;
+
+    }
+}
+
+
+public class Lss {
+    public static void main(String[] args) {
+        String name = "ANTRA AWASTHI";
+        char target = 'N';
+        boolean ans = stringSearch(name, target);
+        System.out.println(ans);
+    }
+
+    static boolean stringSearch(String Str, char target) {
+        if (Str.length() == 0) {
+            return false;
+        }
+        for (int i = 0; i < Str.length(); i++) {
+            if (target == Str.charAt(i)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+
+
+

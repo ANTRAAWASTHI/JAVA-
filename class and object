@@ -1,0 +1,105 @@
+// creating a class is deifining a blueprint for objects which will be created later . Blueprint creation is deifining properties and methods for the object 
+
+class Pen{
+    String type;
+    String color;                                                                                        
+    int rate;
+    String company;
+
+    public void write(){
+        System.out.println("writing something");
+    }
+    public void printinfo(){
+        System.out.println(this.color);
+        System.out.println(this.type);
+        System.out.println(this.rate);
+        System.out.println(this.company);
+    }
+Pen(){
+sout("constructor called");}
+ }
+
+ public class Oops{
+    public static void main(String[] args) {
+        Pen pen1= new Pen();                              // creating object of class // syntax: class name object name = new Class name();
+        pen1.color="blue";                                // assigning values to the properties of class to our object created 
+        pen1.type="gel";
+        pen1.company="tri";
+        pen1.rate=20;                                    // object name.property= value
+        pen1.write();                                    // object name.function;
+        pen1.printinfo();                               // calling function for our object 
+
+    }
+
+
+
+class Student{
+    String name;
+    int age;
+    public void printinfo(){
+        System.out.println(this.age);
+        System.out.println(this.name);
+    }
+    Student(String name,int age){
+    this.name=name;
+    this.age=age;                                                           // parametirzed constructor created 
+    }
+    public class Oop{ 
+        public static void main(String[] args) {
+            Student S1=new Student("antra",20);                           // parametrized constructor called at obj creation
+            S1.printinfo(); 
+        }
+    }
+}
+
+
+
+copy constructors
+
+
+class Student{
+    String name;
+    int age;
+    public void printinfo(){
+        System.out.println(S2.age);
+        System.out.println(this.name);
+    } 
+    Student(Student S2){
+        this.name=S2.name;
+        this.age=S2.age;
+    }
+    Student(){
+
+    }
+    
+    public class Oop{
+        public static void main(String[] args) {
+            Student S1=new Student();
+            S1.name="antra";
+            S1.age=20;
+Student S2= new Student(S1);
+S2.printinfo();
+            S1.printinfo();
+        }
+    }
+}
+
+
+class Student{
+    String name;
+    int age;
+    public void printinfo(){
+        System.out.println(this.age);
+        System.out.println(this.name);
+    }
+    
+    public class Oop{
+        public static void main(String[] args) {
+            Student S1=new Student();                                           default constructor gets created 
+            S1.name="antra";
+            S1.age=20;                                            
+            S1.printinfo();
+        }
+    }
+}
+ }
